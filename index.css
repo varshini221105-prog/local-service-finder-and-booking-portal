@@ -1,0 +1,126 @@
+:root {
+    --primary: #4f46e5;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --background: #f3f4f6;
+    --card-bg: #ffffff;
+    --text: #1f2937;
+    --text-muted: #4b5563;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.booking-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.code-tag {
+    background-color: #eef2ff;
+    color: var(--primary);
+    font-family: monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.25rem 0.75rem;
+    border-radius: 6px;
+    border: 1px dashed var(--primary);
+}
+
+.status-badge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.status-pending { background: #fef3c7; color: #d97706; }
+.status-confirmed { background: #dcfce7; color: var(--success); }
+.status-rejected { background: #fee2e2; color: var(--danger); }
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.details-list li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.details-list strong {
+    color: var(--text-muted);
+    display: inline-block;
+    width: 100px;
+}
+
+.action-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-confirm {
+    background-color: var(--success);
+    color: white;
+}
+
+.btn-reject {
+    background-color: var(--danger);
+    color: white;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.log-message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
