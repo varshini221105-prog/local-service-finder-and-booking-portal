@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Booking Portal</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <div class="booking-card">
+            
+            <!-- Card Header -->
+            <div class="card-header">
+                <div>
+                    <span class="code-tag" id="bookingCode">97</span>
+                </div>
+                <span class="status-badge status-pending" id="statusBadge">Pending</span>
+            </div>
+
+            <!-- Booking Details -->
+            <ul class="details-list">
+                <li><strong>Service:</strong> AC Repair & Service</li>
+                <li><strong>Customer:</strong> Rajesh Kumar</li>
+                <li><strong>Date:</strong> Sept 25, 2026</li>
+                <li><strong>Time:</strong> 02:00 PM</li>
+                <li><strong>Location:</strong> Main Road, Nagapattinam</li>
+            </ul>
+
+            <!-- Action Buttons -->
+            <div class="action-container" id="actionButtons">
+                <button class="btn btn-reject" onclick="handleBooking('reject')">Reject</button>
+                <button class="btn btn-confirm" onclick="handleBooking('confirm')">Confirm</button>
+            </div>
+
+            <!-- Notification Log Box -->
+            <div id="logBox" class="log-message hidden"></div>
+
+        </div>
+    </div>
+
+    <!-- Linking external JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>
